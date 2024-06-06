@@ -1,0 +1,9 @@
+
+g
+java:S1165"Make this "logger" field final.(Ş¼ £ÿÿÿÿÿ8¤¤âÆş1J$0c8dd235-1037-47f6-aef6-27fcb5637173
+q
+java:S1165")Make this "exceptionMessage" field final.(üıõúøÿÿÿÿ8¤¤âÆş1J$699a3c2f-655e-424d-9507-6b3436f9353f
+p
+java:S1948"(Make "logger" transient or serializable.(Ş¼ £ÿÿÿÿÿ8¥¤âÆş1J$56dbb7c3-7463-4a84-95bd-9555563eb682
+z
+java:S1948"2Make "exceptionMessage" transient or serializable.(üıõúøÿÿÿÿ8¥¤âÆş1J$bc046c4a-0583-4cd7-a83f-ae456736bad4

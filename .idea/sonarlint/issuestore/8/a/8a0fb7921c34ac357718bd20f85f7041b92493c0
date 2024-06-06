@@ -1,0 +1,11 @@
+
+
+java:S2259("EA "NullPointerException" could be thrown; "dentist" is nullable here.(Š´µ¬şÿÿÿÿ8º™õ×û1J$c1c7298d-3045-47ea-94ff-e9e789ca80f1
+Â
+java:S62042"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(´àî³ûÿÿÿÿ8Óß¹Öû1J$6a92cf2b-2e95-46d7-9c08-f6b2487e7a2c
+¥
+java:S1128"bRemove this unused import 'com.dentai.appointment_service.exception.AppointmentNotFoundException'.(Ò’£†8Ø™õ×û1J$003f9283-b8ce-4a7b-9bc1-ea492ad69009
+•
+java:S1128"MRemove this unused import 'com.dentai.appointment_service.model.Appointment'.(¨ğ‘èıÿÿÿÿ8Ú™õ×û1J$fba3e17b-358b-4e55-9c65-c2071e650699
+
+java:S1068"9Remove this unused "appointmentRepository" private field.(Éßíäùÿÿÿÿ8Øß¹Öû1J$1f2ab806-e828-434c-a876-da7d32aebb4f

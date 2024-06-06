@@ -1,0 +1,38 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://db:5432/dent-ai-authentication
+    username: postgres
+    password: 123456
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      jakarta.persistence.validation.mode: none
+      hibernate:
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  application:
+    name: authentication-service
+  main:
+    allow-bean-definition-overriding: true
+    allow-circular-references: true
+server:
+  port: 8989
+
+feign:
+  user-management-service:
+    path: /api/user/users
+
+
+jwt:
+  secret: c3ByaW5nLWJvb3Qtc2VjdXJpdHktand0LXR1dG9yaWFsLWppd29vbi1zcHJpbmctYm9vdC1zZWN1cml0eS1qd3QtdHV0b3JpYWwK
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${random.value}
+  client:
+    service-url:
+      defaultZone: http://eureka-server:8761/eureka

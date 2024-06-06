@@ -1,0 +1,46 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: gateway-service
+  cloud:
+    gateway:
+      routes:
+        - id: user-management-service
+          uri: lb://user-management-service
+          predicates:
+            - Path=/api/user/**
+
+
+        - id: authentication-service
+          uri: lb://authentication-service
+          predicates:
+            - Path=/api/auth/**
+          filters:
+            - StripPrefix=1
+
+      discovery:
+        locator:
+          enabled: true
+
+server:
+  port: 8888
+
+jwt:
+  secret: c3ByaW5nLWJvb3Qtc2VjdXJpdHktand0LXR1dG9yaWFsLWppd29vbi1zcHJpbmctYm9vdC1zZWN1cml0eS1qd3QtdHV0b3JpYWwK
+
+eureka:
+  client:
+    register-with-eureka: true
+    service-url:
+      defaultZone: ${EUREKA_URI:http://eureka-server:8761/eureka}
+
+
+  instance:
+    prefer-ip-address: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

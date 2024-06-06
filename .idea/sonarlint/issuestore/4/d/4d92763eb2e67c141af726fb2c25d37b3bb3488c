@@ -1,0 +1,15 @@
+
+
+java:S1192@"ZDefine a constant instead of duplicating this literal "User not found by email: " 3 times.(çıº…8áÒ­ş1J$b7f048b3-89fe-4b61-a81d-e601f2ce6590
+Ÿ
+java:S11926"WDefine a constant instead of duplicating this literal "User not found by id: " 3 times.(î©Ääşÿÿÿÿ8áÒ­ş1J$d3f4b014-37ec-4717-abb9-66df70a20cbc
+Â
+java:S6204I"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(€¸Šışÿÿÿÿ8¦Ó­ş1J$8f901535-5f37-42f8-81d5-99a079dd6410
+½
+java:S6204R"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8¨Ó­ş1J$41878ecb-59d0-4c5d-9831-cb20ac56cdb7
+”
+java:S1128"LRemove this unused import 'com.dentai.usermanagementservice.dto.PatientDto'.(€§ÅÒùÿÿÿÿ8×ğ¢­ş1J$3fc852f7-b726-4236-9678-d0dbdc5fd729
+
+java:S1128"<Remove this unused import 'org.springframework.boot.Banner'.(ö‡íæ8Øğ¢­ş1J$fe51f3e4-4ea1-4fe0-9474-5792279f2086
+|
+java:S1128"4Remove this unused import 'java.time.LocalDateTime'.(æÃ§ƒüÿÿÿÿ8Øğ¢­ş1J$8f22633e-2915-45e7-8753-ddd18b7f0661

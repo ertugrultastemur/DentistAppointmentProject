@@ -1,0 +1,55 @@
+package com.dentai.authenticationservice.client;
+
+import com.dentai.authenticationservice.exceptions.ExceptionMessage;
+import com.dentai.authenticationservice.exceptions.UserNotFoundException;
+import feign.Response;
+import feign.codec.ErrorDecoder;
+import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.io.IOUtils;
+import org.springframework.http.HttpStatus;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
+
+@Slf4j
+public class RetrieveMessageErrorDecoder implements ErrorDecoder {
+
+    private final ErrorDecoder errorDecoder = new Default();
+
+    @Override
+    public Exception decode(String methodKey, Response response) {
+        log.info("RetrieveMessageErrorDecoder: decode method entered.");
+        ExceptionMessage message = null;
+        try (InputStream body = response.body().asInputStream()) {
+            message = new ExceptionMessage((String) response.headers().get("date").toArray()[0],
+                    response.status(),
+                    HttpStatus.resolve(response.status()).getReasonPhrase(),
+                    IOUtils.toString(body, StandardCharsets.UTF_8),
+                    response.request().url());
+            log.info("RetrieveMessageErrorDecoder: message created.");
+
+        } catch (IOException exception) {
+            log.info("RetrieveMessageErrorDecoder: message creating failed. " + exception.getMessage());
+            return new Exception(exception.getMessage());
+        }
+        return switch (response.status()) {
+            case 404 -> {
+                log.info("RetrieveMessageErrorDecoder: 404 error: " + message);
+                throw new UserNotFoundException(message);
+            }
+            case 403 -> {
+                log.info("RetrieveMessageErrorDecoder: 403 error: " + message);
+                throw new UserNotFoundException(message);
+            }
+            case 500 -> {
+                log.info("RetrieveMessageErrorDecoder: 500 error: " + message);
+                throw new UserNotFoundException(message);
+            }
+            default -> {
+                log.info("RetrieveMessageErrorDecoder: error: " + message);
+                yield errorDecoder.decode(methodKey, response);
+            }
+        };
+    }
+}

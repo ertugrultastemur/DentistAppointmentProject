@@ -1,0 +1,11 @@
+
+g
+java:S2629"$Invoke method(s) only conditionally.(°ÉëØ8ØÃŸÊõ1J$b15231b4-74d8-4a3d-b64c-532db98f57fd
+•
+java:S3008"RRename this field "USER_ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ³Ò®8ßÃŸÊõ1J$33424574-b56d-4279-a45a-3629accd8a00
+‚
+java:S1118":Add a private constructor to hide the implicit public one.(—ÌËîşÿÿÿÿ8¡ú­Êõ1J$1d73bd15-e29e-4acd-a9ca-7cff19ae5fe4
+~
+java:S1128"6Remove this unused import 'lombok.AllArgsConstructor'.(´œ¾öùÿÿÿÿ8ÅÉ¯Êõ1J$344b1b6f-354d-4e7e-aecc-69d57eb2b649
+x
+java:S1128"5Remove this unused import 'lombok.NoArgsConstructor'.(¸¨›8ÅÉ¯Êõ1J$4f240066-7263-432b-a978-94e9478677c9

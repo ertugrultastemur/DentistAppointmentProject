@@ -1,0 +1,12 @@
+
+X	java:S125+"<This block of commented-out lines of code should be removed.(Ò‘•8å¤ÅÏş1
+½
+java:S62040"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(âù†ú8È¿çÉş1J$fc0223f9-b15b-4d17-9897-b0037448e224
+½
+java:S6204="zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(œçÖß8Ì¿çÉş1J$c1509808-34fb-43ce-ba4b-8f914d7d979f
+–
+java:S1602;"SRemove useless curly braces around statement and then remove useless return keyword(²ÈÆÓ8Ì¿çÉş1J$730f581d-9fc8-4237-a0ad-022ea547259d
+½
+java:S6204Q"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(œçÖß8‹ßèÉş1J$2a85d2af-bc49-4120-8a50-0e2a3449efb4
+–
+java:S1602O"SRemove useless curly braces around statement and then remove useless return keyword(²ÈÆÓ8‹ßèÉş1J$46b41a95-5bec-40ea-845a-e881ce2f2bf3

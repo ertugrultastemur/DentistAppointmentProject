@@ -1,0 +1,114 @@
+version: "3.8"
+
+services:
+
+  dental-detection:
+    container_name: detection_container
+    image: dental_detection_container_image3
+    ports:
+      - "8502:8502"
+    hostname: dental_detection
+    command: sh -c "python Service.py"
+    build:
+      context: ../dent-ai/python-detection-service/dental-xray-detection-main/src
+      dockerfile: Dockerfile
+    networks:
+      - eureka-network
+
+  eureka-server:
+    container_name: eureka-server
+    image: eureka-gateway-server
+    build:
+      context: ../../eureka-server/
+      dockerfile: Dockerfile
+    ports:
+      - "8761:8761"
+    networks:
+      - eureka-network
+
+  user-management-service:
+    container_name: user-management-service
+    image: user-management-service
+    build:
+      context: ./user-management-service
+      dockerfile: Dockerfile
+    ports:
+      - "8383:8383"
+    networks:
+      - eureka-network
+    environment:
+      - EUREKA_URI=http://eureka-server:8761/eureka
+    depends_on:
+      - eureka-server
+      - db
+
+  appointment-service:
+    container_name: appointment-service
+    image: appointment-service
+    build:
+      context: ./appointment-service
+      dockerfile: Dockerfile
+    ports:
+      - "8686:8686"
+    networks:
+      - eureka-network
+    environment:
+      - EUREKA_URI=http://eureka-server:8761/eureka
+    depends_on:
+      - eureka-server
+      - db
+
+  gateway-service:
+    container_name: gateway-service
+    image: gateway-service
+    build:
+      context: ./gateway-service
+      dockerfile: Dockerfile
+    ports:
+      - "8888:8888"
+    networks:
+      - eureka-network
+    environment:
+      - EUREKA_URI=http://eureka-server:8761/eureka
+    depends_on:
+      - eureka-server
+
+  authentication-service:
+    container_name: authentication-service
+    image: authentication-service
+    build:
+      context: ./authentication-service
+      dockerfile: Dockerfile
+    ports:
+      - "8989:8989"
+    networks:
+      - eureka-network
+    environment:
+      - EUREKA_URI=http://eureka-server:8761/eureka
+    depends_on:
+      - eureka-server
+      - db
+
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: 'postgres'
+      POSTGRES_PASSWORD: '123456'
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+      - pg_data2:/var/lib/postgresql/data2
+      - pg_data3:/var/lib/postgresql/data3
+    networks:
+      - eureka-network
+    ports:
+      - "5432:5432"
+
+volumes:
+  pg_data:
+  pg_data2:
+  pg_data3:
+
+networks:
+  eureka-network:
+    driver: bridge

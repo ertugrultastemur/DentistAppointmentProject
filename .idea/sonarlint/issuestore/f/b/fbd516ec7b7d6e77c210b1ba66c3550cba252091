@@ -1,0 +1,11 @@
+
+¸
+java:S1598"ôThis file "UserNotFoundException.java" should be located in "com\dentai\authenticationservice\exceptions" directory, not in "C:\Users\ertugrul\Documents\GitHub\dent-ai\appointment-service\src\main\java\com\dentai\appointment_service\exception".(óôÈÀ8¨íÎ¬ú1J$43b98bac-b451-40ea-8a0f-403114371a90
+g
+java:S1165"Make this "logger" field final.(±¬˜ñûÿÿÿÿ8ÖÏ¬ú1J$4dcd7cbb-1990-4175-a5a6-0e6137936b88
+l
+java:S1165")Make this "exceptionMessage" field final.(†À¬ß8ÖÏ¬ú1J$c8529461-f1ba-4ed0-9934-105e9b51179b
+p
+java:S1948"(Make "logger" transient or serializable.(±¬˜ñûÿÿÿÿ8ØÏ¬ú1J$6075dc54-ec27-4a7c-ad34-3b3405aadc4c
+u
+java:S1948"2Make "exceptionMessage" transient or serializable.(†À¬ß8ÿŸî³ú1J$08618bdc-9fe3-4a96-a46f-03d1943f08c3
