@@ -1,0 +1,5 @@
+
+½
+java:S6204-"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ÞÃˆ¡8óá·¯þ1J$8d9f5fac-b7db-46e0-b8fe-6b8b08e06faa
+½
+java:S6204."zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(É Ò˜8ôá·¯þ1J$00b6ba14-c12f-43a6-925f-f4a7dba2c422

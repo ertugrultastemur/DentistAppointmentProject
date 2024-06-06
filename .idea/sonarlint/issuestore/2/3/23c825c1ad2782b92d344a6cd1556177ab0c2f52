@@ -1,0 +1,13 @@
+
+Β
+java:S62046"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(§ά΄Ζώÿÿÿÿ8²‘Τώ1J$f8fc6102-0f02-4b19-942f-3c0b2d28114f
+…
+java:S1854B"=Remove this useless assignment to local variable "imageBlob".(“΄Λ³ύÿÿÿÿ8ƒ²‘Τώ1J$0a7ebcf8-b531-43d8-a10e-9e8a9fb1a9de
+v
+java:S1481B".Remove this unused "imageBlob" local variable.(“΄Λ³ύÿÿÿÿ8…²‘Τώ1J$0f7b694f-bab0-493c-acda-ed46d54cb446
+q
+java:S1874H".Remove this use of "create"; it is deprecated.(ϋΝδ8²‘Τώ1J$39255519-6b90-47e7-94cc-45b602b91a4e
+
+java:S1128"9Remove this unused import 'java.io.ByteArrayInputStream'.(Λτζ±ϋÿÿÿÿ8π΅’Τώ1J$9ad7a63b-b36b-4770-a8b8-246630e86938
+|
+java:S1128":Remove this unused import 'java.io.ByteArrayOutputStream'.(Ξ‡Θ8π΅’Τώ1J$e4b1aecf-aaec-4abe-8c0a-2d866760f7a6

@@ -1,0 +1,25 @@
+
+“
+java:S3655="PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(¼¯è¸8¡õÎÔş1J$46116072-a81d-46d7-8bf2-0d3bb0453d6c
+Â
+java:S6204E"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ˆ÷ÙËüÿÿÿÿ8¯õÎÔş1J$8a1df5ca-d1d3-462b-901d-d439c4571d04
+½
+java:S6204a"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(œçÖß8µõÎÔş1J$fcd60aca-ee1f-44a1-93f0-3dab81f2f27b
+›
+java:S1602_"SRemove useless curly braces around statement and then remove useless return keyword(ìİ¬˜üÿÿÿÿ8µõÎÔş1J$87a76ce2-bf64-4820-ab90-2d560f8a54c6
+‰
+java:S1128"FRemove this unused import 'org.hibernate.type.SerializationException'.(Û–¨8»õÎÔş1J$c1ebce6d-3b36-4d07-897e-d296692e38b3
+€
+java:S1128"8Remove this unused import 'org.modelmapper.ModelMapper'.(ó¿Ôúÿÿÿÿ8»õÎÔş1J$885c13ab-3033-41e6-9190-ffa46223861a
+‡
+java:S1128"?Remove this unused import 'javax.sql.rowset.serial.SerialBlob'.(Çà˜µûÿÿÿÿ8»õÎÔş1J$40a506cf-923b-48eb-95c9-6bf5be49014b
+‡
+java:S1128"DRemove this unused import 'javax.sql.rowset.serial.SerialException'.(·„À™8»õÎÔş1J$30dfd18d-3a34-46c5-99b7-0cfada2f6269
+m
+java:S1128"*Remove this unused import 'java.sql.Blob'.(ïÚ¶ã8»õÎÔş1J$d27413d5-5b61-44b2-97b8-cbab850f3c6e
+p
+java:S1128".Remove this unused import 'java.util.HashSet'.(Ê‚êX8¼õÎÔş1J$a0259e94-4739-4791-bcdb-60a3d086f4ad
+r
+java:S1128"*Remove this unused import 'java.util.Set'.(ö²„¤şÿÿÿÿ8¼õÎÔş1J$c73355e8-9a13-4b18-9b95-7d4fbf324eac
+~
+java:S1068'"6Remove this unused "modelMapperService" private field.(‡œÆõÿÿÿÿÿ8¼õÎÔş1J$83a59b05-c60e-4758-973b-022b655b719e

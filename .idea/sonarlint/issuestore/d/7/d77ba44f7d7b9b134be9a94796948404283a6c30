@@ -1,0 +1,8 @@
+
+X	java:S125%"<This block of commented-out lines of code should be removed.(×Óõ8¾ó¬Ïş1
+œ
+java:S6204,"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ğÖ¼­úÿÿÿÿ8¿ó¬Ïş1
+œ
+java:S6204="zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ğÖ¼­úÿÿÿÿ8Ãó¬Ïş1
+n
+java:S1128"QRemove this unused import 'com.dentai.usermanagementservice.dto.PrescriptionDto'.(ß²âè8Æó¬Ïş1

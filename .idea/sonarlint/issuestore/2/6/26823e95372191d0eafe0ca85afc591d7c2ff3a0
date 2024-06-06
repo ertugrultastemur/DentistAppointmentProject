@@ -1,0 +1,11 @@
+
+{
+java:S2387"3"logger" is the name of a field in "BaseException".(±¬ρϋÿÿÿÿ8»Οασυ1J$60f12426-acd8-4399-8cc5-d3bbf009fb41
+g
+java:S1165"Make this "logger" field final.(±¬ρϋÿÿÿÿ8ΎΟασυ1J$3cc71eba-f919-47b2-9f8c-d829efc64b81
+l
+java:S1165")Make this "exceptionMessage" field final.(†ΐ¬ί8ήƒσσυ1J$7f7f96e9-e37d-4cb5-b823-1b604687bcbf
+p
+java:S1948"(Make "logger" transient or serializable.(±¬ρϋÿÿÿÿ8ΑΟασυ1J$a0027cd3-ace1-4b29-989a-020577178bdd
+u
+java:S1948"2Make "exceptionMessage" transient or serializable.(†ΐ¬ί8ΰƒσσυ1J$20d16419-9a15-4268-af61-046ac6213948
